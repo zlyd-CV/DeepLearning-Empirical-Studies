@@ -1,2 +1,33 @@
-# DeepLearning-Empirical-Studies
-深度学习领域由假设驱动的实证研究集合。每个模块包含可复现的代码、实验配置以及针对特定机器学习困惑的详细分析报告。A collection of hypothesis-driven empirical studies in Deep Learning. Each module contains reproducible code, experiment configurations, and detailed analytical reports addressing specific ML inquiries.
+# 深度学习实证研究 (DeepLearning-Empirical-Studies)
+
+## 前言 
+本仓库创立于2026年5月11日，也算是我第一个决定长期更新和维护的仓库吧。在经历了持续约大半年的人工智能、计算机视觉、医学图像分割等领域的学习后，每当我学习一些新知识时都会产生一些奇奇怪怪的想法：“如果？那么？...”。因此本仓库主要用于记录作者学习机器学习/深度学习期间遇到的问题与想法。作者希望通过控制实验探究模型的表征现象，旨在从定性(未来也可能会定量)分析模型在某种情况的表现对比，并思考其中的原因。期待从中得到启发。希望作者的专业能力能与本仓库一样不断随着实践而进步。
+
+## 组织架构
+每个独立的实验主题均存放在单独的目录下。其仓库结构如下：
+```text
+DeepLearning-Empirical-Studies/
+├── 01-AlexNet-RGB-vs-ResNet152-Gray/  # 每个实验的总文件夹，实验1
+│   ├── code/                          # 实验源代码，可独立运行
+│   ├── report/                        # 实验报告目录
+│   │   ├── Report_ZH.pdf              # 实验报告 (中文版)
+│   │   └── Report_EN.pdf              # 实验报告 (英文版)
+│   ├──requirements.txt                # 依赖包，当前目录下输入pip install requirements.txt安装当前实验的依赖包
+│   └── README.md                      # 当前实验的README.md
+├── 02-AlexNet-RGB-vs-ResNet152-Gray/  # 每个实验的总文件夹，实验2
+│   ......
+├── .gitignore                         # 忽略不必要文件的上传
+└── README.md                          # 当前仓库的README.md
+```
+## 实验表格
+下表收录了本仓库所有的实证探究项目。点击“实验名称”可进入对应模目录查看源码与实验报告。
+| 实验编号 | 实验名称| 探究内容 | 完成状态 |
+| :---: | :--- | :--- | :---: |
+| `Exp-01` | [AlexNet(RGB) vs. ResNet-152(Gray) on CIFAR-100](./01-AlexNet-RGB-vs-ResNet152-Gray/) | 探究“模型参数规模与非线性映射能力”能否弥补甚至超越“输入数据颜色模态的物理退化”。 | 进行中 🚧 |
+
+## 联系方式
+- 邮箱：zhoulyd@126.com
+
+如果觉得有收获，不妨点击一个⭐哦~~~
+
+
